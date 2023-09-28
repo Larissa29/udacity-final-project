@@ -1,13 +1,13 @@
 import json
 from flask import request
 from functools import wraps
-from jose import jwt
 from urllib.request import urlopen
 
+from jose import jwt
 
 AUTH0_DOMAIN = 'dev-18pghz5r0pmfn1pf.us.auth0.com'
 ALGORITHMS = ['RS256']
-API_AUDIENCE = 'drinks'
+API_AUDIENCE = 'casting'
 
 
 class AuthError(Exception):
