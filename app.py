@@ -40,7 +40,7 @@ def create_app():
             title=data['title'],
             release_date=data['release_date']
         )
-        if not movie.title or movie.release_date:
+        if not movie.title or not movie.release_date:
             abort(422)
 
         try:
@@ -113,7 +113,7 @@ def create_app():
             gender=data['gender'],
             movie_id=data['movie_id']
         )
-        if not actor.name or actor.age or actor.gender:
+        if not actor.name or not actor.age or not actor.gender:
             abort(422)
         try:
             actor.insert()
