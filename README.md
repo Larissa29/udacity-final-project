@@ -1,7 +1,7 @@
 # Full Stack Project Casting Agency
 
 ## Project Description
-This is the capstone project for Full-Stack Udacity Nanodegree. Casting Agency models a company that is responsible for creating movies and managing and assigning actors to those movies. There are three different roles in the company Casting Assistant, Casting Director, and Executive Producer. Each of them has a different set of permissions to view, add, update and delete movies and actors in the databse.
+This is the udacity final project "Casting Agency". There are three different roles in the agency: an assistant, a producer and a director. (Access Token can be find below)
 
 ## Project Result
 Heroku: https://udacity-final-project.onrender.com/

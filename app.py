@@ -171,32 +171,32 @@ def create_app():
         return jsonify({
             "success": False,
             "error": 400,
-            "message": "Bad Request, please check your inputs"
-        }), 400
+            "message": "Bad Request"
+        })
 
     @app.errorhandler(404)
     def not_found(error):
         return jsonify({
             "success": False,
             "error": 404,
-            "message": "resource not found."
-        }), 404
+            "message": "Resource not found."
+        })
 
     @app.errorhandler(500)
     def internal_error(error):
         return jsonify({
             "success": False,
             "error": 500,
-            "message": "Sorry, there's a problem on our end."
-        }), 500
+            "message": "Something unexpected happened."
+        })
 
     @app.errorhandler(422)
     def unprocessable(error):
         return jsonify({
             'success': False,
             'error': 422,
-            'message': 'unprocessable. Check your input.'
-        }), 422
+            'message': 'Unprocessable entity.'
+        })
 
     @app.errorhandler(403)
     def forbidden(error):
@@ -204,7 +204,7 @@ def create_app():
             "success": False,
             "error": 403,
             "message": "You are not allowed to access this resource",
-        }), 403
+        })
 
     @app.errorhandler(AuthError)
     def auth_error(ex):
