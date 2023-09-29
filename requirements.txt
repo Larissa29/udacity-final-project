@@ -7,6 +7,7 @@ Flask==2.2.5
 Flask-Cors==4.0.0
 Flask-Migrate==4.0.5
 Flask-SQLAlchemy==3.0.5
+future==0.18.3
 greenlet==2.0.2
 gunicorn==21.2.0
 itsdangerous==2.1.2
